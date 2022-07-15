@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Sample Landing Page</title>
 </head>
 <body>
+    <div class="container-vh"> <!-- A container to have header and main be exactly 100vh, as the rest of the page. -->
     <header class="page-header">
         <img src="images/logo.png" alt="A sample logo">
         <div class="header-navigation">
@@ -19,7 +23,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="page-main">
         <div class="right-side">
             <h1>The title of your website</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vitae tenetur eveniet corrupti nostrum distinctio qui reiciendis ex repellat sit fuga nam voluptate, maxime praesentium. Reiciendis distinctio ipsam voluptatibus debitis!	</p>
@@ -30,6 +34,7 @@
             <img src="images/placeholder.png" alt="A placeholder for your image">
         </div>
     </main>
+    </div>
 
     <section>
         <header class="section-title">Random info about your business</header>
