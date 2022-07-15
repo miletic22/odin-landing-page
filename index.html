@@ -1,3 +1,5 @@
+<!-- Not responsive at all, v2.0 should make it responsive to different sizes-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,59 +13,66 @@
     <title>Sample Landing Page</title>
 </head>
 <body>
-    <div class="container-vh"> <!-- A container to have header and main be exactly 100vh, as the rest of the page. -->
-    <header class="page-header">
-        <img src="images/logo.png" alt="A sample logo">
-        <div class="header-navigation">
-            <ul>
-                <li><a href="#nowhere">About <span class="icon">&#9432;</span></a></li>
-                <li><a href="#nowhere">Product <span class="icon">&#9734;</span></a></li>
-                <li><a href="#nowhere">Shop <span class="icon">&#128722;</span></a></li>
-            </ul>
-        </div>
-    </header>
+    <div class="container-vh"> <!-- A container to have header and main be exactly 100vh, as the rest of the page. Used elsewhere too -->
+        <header class="page-header">
+            <img src="images/logo.png" alt="A sample logo">
+            <div class="header-navigation">
+                <ul>
+                    <li><a href="#nowhere">About <span class="icon">&#9432;</span></a></li>
+                    <li><a href="#nowhere">Product <span class="icon">&#9734;</span></a></li>
+                    <li><a href="#nowhere">Shop <span class="icon">&#128722;</span></a></li>
+                </ul>
+            </div>
+        </header>
 
-    <main class="page-main">
-        <div class="right-side">
-            <h1>The title of your website</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vitae tenetur eveniet corrupti nostrum distinctio qui reiciendis ex repellat sit fuga nam voluptate, maxime praesentium. Reiciendis distinctio ipsam voluptatibus debitis!	</p>
-            <button><a href="#nowhere">Sign Up</a></button>
-        </div>
-        
-        <div class="left-side">
-            <img src="images/placeholder.png" alt="A placeholder for your image">
-        </div>
-    </main>
+        <main class="page-main">
+            <div class="right-side">
+                <h1>The title of your website</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vitae tenetur eveniet corrupti nostrum distinctio qui reiciendis ex repellat sit fuga nam voluptate, maxime praesentium. Reiciendis distinctio ipsam voluptatibus debitis!	</p>
+                <button><a href="#nowhere">Sign Up</a></button>
+            </div>
+            
+            <div class="left-side">
+                <img src="images/placeholder.png" alt="A placeholder for your image">
+            </div>
+        </main>
     </div>
 
-    <section>
-        <header class="section-title">Random info about your business</header>
-        <div class="container">
-            <div class="card">
-                <div class="box"></div>
-                <p class="box-info">Lorem ipsum dolor sit amet consectetur ...</p>
+    <div class="container-vh">
+        <section class="section-cards">
+            <header class="section-title">Random info about your business</header>
+            <div class="container">
+                <!-- Any longer paragraphs will cause the cards to expand. Best use similar lines in all, until solution is found-->
+                <!-- Contains up to 7 cards before resizing is required-->
+                <div class="card">
+                    <div class="box"></div>
+                    <p class="box-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="box"></div>
+                    <p class="box-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="box"></div>
+                    <p class="box-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="box"></div>
+                    <p class="box-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
             </div>
-            <div class="card">
-                <div class="box"></div>
-                <p class="box-info">Lorem ipsum dolor sit amet consectetur ...</p>
-            </div>
-            <div class="card">
-                <div class="box"></div>
-                <p class="box-info">Lorem ipsum dolor sit amet consectetur ...</p>
-            </div>
-            <div class="card">
-                <div class="box"></div>
-                <p class="box-info">Lorem ipsum dolor sit amet consectetur ...</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section-title">
-        <header>Great things said about your business</header>
-        <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus pariatur non culpa, ullam, odit ea quia inventore a nostrum quidem, totam aliquam nemo natus esse. Unde quam exercitationem obcaecati accusantium."</blockquote>
-        <figcaption>Someone about your business</figcaption>
-    </section>
-
+        <section class="section-quotation">
+            <header class="section-title">Great things said about your business</header>
+            <div class="quote">
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus pariatur non culpa, ullam, odit ea quia inventore a nostrum quidem, totam aliquam nemo natus esse. Unde quam exercitationem obcaecati accusantium."
+                <figcaption><span>— </span>Someone about your business</figcaption>
+                </blockquote>
+                
+            </div>
+        </section>
+    </div>
     <section>
         <div class="sign-up-box">
             <header class="sign-up-title">Ready to buy?</header>
