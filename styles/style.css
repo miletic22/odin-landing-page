@@ -77,7 +77,7 @@ li a:hover {
 }
 
 .right-side button {
-    background-color: #3B82F6;
+    background-color: #3882F6;
     border: 0.1px solid black;
     padding: 5px 30px;
     border-radius: 10px;
@@ -86,8 +86,10 @@ li a:hover {
 
 .right-side button a {
     text-decoration: none;
+    text-transform: uppercase;
     color: rgba(255, 255, 255, 0.783);
     transition: color 0.1s linear;
+
 }
 
 .right-side button a:hover {
@@ -169,4 +171,87 @@ figcaption {
 
 figcaption span {
     user-select: none;
+}
+
+/* - - - - - - - - - - - - - SECTION-3 - - - - - - - - - - - - - - - - */
+
+.section-signup {
+    height: 50vh;
+    padding: 0 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-box {
+    background-color: #3882F6;
+    padding: 20px 150px;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.sign-up-title {
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+}
+
+.sign-up-box p {
+    font-family: Montserrat, sans-serif;
+    padding: 10px 0 20px 0;
+    margin: 0;
+}
+
+.signup-left button {
+    margin: 20px;
+    padding: 5px 25px;
+    background: #3882F6;
+    border: 1px solid rgba(255, 255, 255, 0.783);
+    border-radius: 10px;
+    transition: border-color 0.1ms linear;
+}
+
+
+.signup-left button:hover {
+    border-color: white;;
+}
+
+.signup-left button a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.783);
+    text-transform: uppercase;
+    transition: color 0.1ms linear;
+}
+
+
+.signup-left button a:hover {
+    color: white;
+}
+
+
+/* - - - - - - - - - - - - - F O O T E R - - - - - - - - - - - - - - - - */
+
+footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+}
+
+.footer-info {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.783);
+    transition: color 0.1ms linear, border-bottom 0.1ms linear;
+}
+
+.footer-info a:hover {
+    color: white;
+    border-bottom: 0.1px solid white;
 }
